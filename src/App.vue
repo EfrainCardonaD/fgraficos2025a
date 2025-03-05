@@ -1,7 +1,7 @@
 <script setup>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
-import FirstOption from "./components/landing/FirstOption.vue";
+import LandingPage from "./views/LandingPage.vue";
 
 
 
@@ -12,7 +12,7 @@ import FirstOption from "./components/landing/FirstOption.vue";
 
 
 <div>
-  <Header/>
+  <Header :key="$route.fullPath" />
   <router-view/>
   <Footer/>
 </div>

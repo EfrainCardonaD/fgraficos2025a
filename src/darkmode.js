@@ -4,6 +4,7 @@ export function initializeThemeToggle() {
     const toggleDarkIcon = document.getElementById('toggle-dark-icon');
     const toggleLightIcon = document.getElementById('toggle-light-icon');
 
+
     if (!themeToggle || !toggleDarkIcon || !toggleLightIcon) return;
 
     // Aplicar tema almacenado o preferencia del sistema
