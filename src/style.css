@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import "tailwindcss";
-
 @import "flowbite/src/themes/default.css";
+
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 @source "../node_modules/flowbite-datepicker";
 @custom-variant dark (&:where(.dark, .dark *));
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@source "../node_modules/flowbite-datepicker";
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme{
+
+    --color-primary-bg: rgba(224, 224, 224, 0.61);
     --color-primary-50: #f0fdfa;
     --color-primary-100: #ccfbf1;
     --color-primary-200: #99f6e4;
@@ -17,5 +25,9 @@
     --color-primary-800: #115e59;
     --color-primary-900: #134e4a;
     --color-primary-950: #042f2e;
-    --font-body: 'Source Sans Pro', ui-sans-serif, system-ui, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --font-body: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
 }
+
